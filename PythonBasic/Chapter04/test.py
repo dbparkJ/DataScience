@@ -1,0 +1,13 @@
+x = [2,4,1,5,7]
+
+lst=[i**2 for i in x]
+print(lst)
+
+charset = ['abc', 'code', 'band', 'band', 'abc']
+wc = {}
+
+for key in charset:
+    # get()함수 : key 이용 value 가져오기
+    wc[key] = wc.get(key, 0) + 1  # get() 이용
+
+print(wc)
